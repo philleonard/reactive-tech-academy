@@ -1,0 +1,10 @@
+.classpath
+.DS_Store
+.factorypath
+.idea
+.project
+.settings
+target
+*.iml
+*.swp
+gatling/results
