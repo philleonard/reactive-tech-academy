@@ -55,8 +55,7 @@ export function Sandbox({ DOM, store }) {
     .map(map(apply(flip(merge))));
 
   const hintButton$ = DOM.select('.show-hint').events('click');
-  const showHint$ = Observable.merge(example$.switchMap(e => hintButton$.scan((acc, event) => !acc, false)), example$.map(e => false));
-  // const showHint$ = Observable.merge(hintButton$.scan((acc, event) => !acc, true), example$.map(e => false));
+  const showHint$ = example$.switchMap(e => hintButton$.scan((acc, event) => !acc, false).startWith(false));
 
   const vtree$ = Observable
     .combineLatest(inputDOMs$, outputTimeline.DOM, example$, showHint$)
