@@ -13,7 +13,7 @@ yarn dev
 Head to http://localhost:8080 and get cracking!
 
 ## Gatling showcase
-- Import `performance-showcase` into intellij
+- Import `rxjava` folder into intellij
 - Open `Application.java` and run as a new spring boot application
 
 Run the gatling tests with:
