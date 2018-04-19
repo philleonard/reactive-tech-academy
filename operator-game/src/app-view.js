@@ -26,7 +26,7 @@ function renderHeader() {
   return div({ style: merge(flex, { alignItems: 'baseline' }) }, [
     h1({
       style: merge(fontSpecial, greyDark, flex1),
-    }, ['RxJS Marbles']),
+    }, ['Rx Marbles']),
     h3({
       style: merge(greyDark, flexMain),
     }, ['Interactive diagrams of Rx Observables'])
